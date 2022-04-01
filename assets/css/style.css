@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Titillium+Web:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: auto;
+    color: #FCFFFC;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #040F0F;
+}
+
+header {
+    background: url("../images/background.png");
+    background-size: 110%;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1, h2, p {
+    margin-top: 2px;
+    background-color: #2BA84A;
+
+}
+
+.fernando {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-left: 5%;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    width: 400px;
+    background-color: #2BA84A;
+    transition: all 0.3s ease-out;
+}
+
+.leonardo {
+    display: flex;
+    flex-direction: column;
+    float: inline-start;
+    margin-right: 5%;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    width: 400px;
+    background-color: #2BA84A;
+    transition: all 0.3s ease-out;
+}
+
+.fernando:hover {
+    transform: translateY(-5px);
+    background-color: #248232;
+}
+
+.leonardo:hover {
+    transform: translateY(-5px);
+    background-color: #248232;
+}
+
+.butaomaroto {
+    display: flex;
+    float: none;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 30px;
+    background: #2BA84A;
+    color: #FCFFFC;
+    border: 0.25rem solid #2BA84A;
+    padding: 0.85em 0.75em;
+    position: relative;
+    margin: 2% 25%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button:hover {
+    color: #248232;
+}
+
+button::after {
+    content: "";
+    background: #FCFFFC;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+}
+
+button.butaomaroto::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0) rotate(-180deg);
+}
+
+button.butaomaroto:hover::after {
+    transform: scale(1, 1) rotate(0deg);
+}
+
+h1 {
+    font-size: 35px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30rem;
+    animation: type 4s steps(60, end);
+}
+
+h1:nth-child(2) {
+    animation: type2 8s steps(60, end);
+}
+
+a {
+    background-color: #2BA84A;
+    text-decoration: none;
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 0;
+    }
+
+    100% {
+        width: 100;
+    }
+}
+
+@keyframes blink {
+    to {
+        opacity: .0;
+    }
+}
