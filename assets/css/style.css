@@ -72,6 +72,7 @@ h1, h2, p {
     border: 0.25rem solid #2BA84A;
     padding: 0.85em 0.75em;
     position: relative;
+    margin-top: 15px;
     margin: 2% 25%;
     z-index: 1;
     overflow: hidden;
@@ -102,12 +103,59 @@ button.butaomaroto:hover::after {
     transform: scale(1, 1) rotate(0deg);
 }
 
-h1 {
+.titulo1 {
     font-size: 35px;
     margin: 10px 0 0 10px;
     white-space: nowrap;
     overflow: hidden;
-    width: 30rem;
+    width: 23rem;
+    animation: type 4s steps(60, end);
+}
+
+.titulo2 {
+    font-size: 35px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30.8rem;
+    animation: type 4s steps(60, end);
+}
+
+
+.titulo3 {
+    font-size: 35px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 33rem;
+    animation: type 4s steps(60, end);
+}
+
+
+.titulo4 {
+    font-size: 35px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 31rem;
+    animation: type 4s steps(60, end);
+}
+
+.tituloPrincipal {
+    font-size: 35px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 25rem;
+    animation: type 4s steps(60, end);
+}
+
+.tituloPrincipal2 {
+    font-size: 35px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 33.8rem;
     animation: type 4s steps(60, end);
 }
 
